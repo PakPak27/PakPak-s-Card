@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <title>Page Title</title>
+    <link rel="stylesheet" href="pakcard.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  </head>
+  <body>
+    <div class="card">
+      <button onclick="toggleDarkMode(event)">Moonlight</button>
+      
+       <img src="https://i.pinimg.com/564x/3b/a2/3f/3ba23f122f67611287745bf818ce94c4.jpg" alt="pakwhan" class="profile">
+      
+      <h1>Chanaphath Malilert</h1>
+      <p class="font-light">&ldquo; I'm just Eighteen &ldquo;</p>
+      <div class="flex flex-col gap-2 max-w-[20rem]">
+        <p class="font-semibold">I enjoy IoT and websites</p>
+        </div>
+      <div class="flex flex-col gap-2 max-w-[20rem]">
+        <p class="font-semibold">Robot and Coding Club</p>
+        <p class="font-semibold">at TPN school</p>
+        </div>
+      <hr class="border-1" />
+    <p class="text-xs font-light text-center"> Contact Me
+    </p>
+      
+      <div class="link">
+        <a target="_blank" href="https://www.facebook.com/profile.php?id=100022217601081&sk=photos">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_(2019).png/1024px-Facebook_Logo_(2019).png" alt="facebook" class="icon">
+        </a>
+        <a target="_blank" href="https://www.instagram.com/_ppakpakk/">
+          <img src="https://webstockreview.net/images/information-clipart-transparent-19.png" alt="instagram" class="icon">
+        </a>
+        <a target="_blank" href="https://github.com/PakPak27">
+          <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="github" class="icon">
+        </a>
+      </div>
+
+      <script>
+        function toggleDarkMode(e) {
+               const body = document.body;
+               const storage = localStorage.getItem('theme');
+               if (storage == 'dark') {
+                   e.target.innerText = "Moonlight";
+                 body.classList.remove('dark');
+                 localStorage.setItem('theme', 'light');
+               } else {
+                   e.target.innerText = "Sunshine";
+                 body.classList.add('dark');
+                 localStorage.setItem('theme', 'dark');
+               }
+             }
+      </script>
+      
+  </body>
+</html>
